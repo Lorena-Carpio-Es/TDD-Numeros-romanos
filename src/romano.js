@@ -1,3 +1,4 @@
+
 const romanNumerals = [
   { value: 1000, numeral: 'M' },
   { value: 900, numeral: 'CM' },
@@ -14,7 +15,7 @@ const romanNumerals = [
   { value: 1, numeral: 'I' }
 ];
 
-function decimalToRoman(num) {
+export function decimalToRoman(num) {
   let result = '';
   for (const { value, numeral } of romanNumerals) {
     while (num >= value) {

@@ -1,4 +1,4 @@
-const { decimalToRoman } = require('./romano');
+import { decimalToRoman } from './romano.js';
 
 document.getElementById('converterForm').addEventListener('submit', function(event) {
   event.preventDefault();
