@@ -9,3 +9,6 @@ test('Convierte 2 a II', () => {
   expect(decimalToRoman(2)).toBe('II');
 });
 
+test('Convierte 5 a V', () => {
+  expect(decimalToRoman(5)).toBe('V');
+});
