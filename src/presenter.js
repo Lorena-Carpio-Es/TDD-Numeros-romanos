@@ -1,15 +1,8 @@
-import sumar from "./sumador";
+const { decimalToRoman } = require('./romano');
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
-
-form.addEventListener("submit", (event) => {
+document.getElementById('converterForm').addEventListener('submit', function(event) {
   event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  const number = parseInt(document.getElementById('number').value, 10);
+  const romanNumeral = decimalToRoman(number);
+  document.getElementById('result').textContent = romanNumeral;
 });

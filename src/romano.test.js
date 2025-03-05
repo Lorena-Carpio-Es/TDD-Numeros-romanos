@@ -16,3 +16,27 @@ test('Convierte 5 a V', () => {
 test('Convierte 10 a X', () => {
   expect(decimalToRoman(10)).toBe('X');
 });
+
+test('Convierte 4 a IV', () => {
+  expect(decimalToRoman(4)).toBe('IV');
+});
+
+test('Convierte 9 a IX', () => {
+  expect(decimalToRoman(9)).toBe('IX');
+});
+
+test('Convierte 40 a XL', () => {
+  expect(decimalToRoman(40)).toBe('XL');
+});
+
+test('Convierte 90 a XC', () => {
+  expect(decimalToRoman(90)).toBe('XC');
+});
+
+test('Convierte 400 a CD', () => {
+  expect(decimalToRoman(400)).toBe('CD');
+});
+
+test('Convierte 500 a D', () => {
+  expect(decimalToRoman(500)).toBe('D');
+});
