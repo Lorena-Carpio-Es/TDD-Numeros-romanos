@@ -12,3 +12,7 @@ test('Convierte 2 a II', () => {
 test('Convierte 5 a V', () => {
   expect(decimalToRoman(5)).toBe('V');
 });
+
+test('Convierte 10 a X', () => {
+  expect(decimalToRoman(10)).toBe('X');
+});
